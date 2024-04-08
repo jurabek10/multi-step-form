@@ -1,35 +1,71 @@
+/* FONT-FACES */
+@font-face {
+  font-family: "Ubuntu";
+  src: url("..fonts/Ubuntu-Bold.woff2") format("woff2"),
+    url("..fonts/Ubuntu-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("..fonts/Ubuntu-Regular.woff2") format("woff2"),
+    url("..fonts/Ubuntu-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("..fonts/Ubuntu-Medium.woff2") format("woff2"),
+    url("..fonts/Ubuntu-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* CUSTOMS PROPS */
+:root {
+  --Marine-blue: hsl(213, 96%, 18%);
+  --Purplish-blue: hsl(243, 100%, 62%);
+  --Pastel-blue: hsl(228, 100%, 84%);
+  --Light-blue: hsl(206, 94%, 87%);
+  --Strawberry-red: hsl(354, 84%, 57%);
+}
+
 /* GLOBAL STYLES */
 
 html {
-    height: 100%;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  height: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    font-size: 16px;
-    line-height: 1.5;
-    font-family: "Arial", sans-serif;
-    background-color: #fff;
-    color: #222;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Ubuntu", "Arial", sans-serif;
+  background-color: #fff;
+  color: #222;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
-
 
 /* AUTO-FILLS STYLES*/
 /* input:-webkit-autofill,
@@ -55,32 +91,31 @@ select:-webkit-autofill:focus {
     opacity: 1;
 }  */
 
-
 /* VISUALLY-HIDDEN */
 .visuallyhidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* CONTAINER */
 
 .container {
-    width: 100%;
-    max-width: 1200px;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-right: auto;
-    margin-left: auto;
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* MAIN-CONTENT */
 
 main {
-    flex-grow: 1;
+  flex-grow: 1;
 }
