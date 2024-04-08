@@ -195,20 +195,15 @@ main {
   padding: 0;
 }
 
-.personal__title {
+.content__title {
   margin-bottom: 15px;
   color: var(--Marine-blue);
   font-size: 28px;
 }
-.personal__description {
+.content__description {
   margin-top: 0;
   margin-bottom: 30px;
   color: hsl(231, 11%, 63%);
-}
-
-.personal__form {
-}
-.personal__label--wrapper {
 }
 
 .personal__label {
@@ -256,4 +251,142 @@ main {
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--Marine-blue);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: var(--Marine-blue);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* .content__cards {
+
+} */
+.cards {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  width: 205px;
+  text-align: center;
+  padding: 15px;
+  border: 1px solid hsl(231, 11%, 63%);
+  border-radius: 10px;
+}
+
+.card:hover {
+  border-color: var(--Purplish-blue);
+}
+
+.card:not(:last-child) {
+  margin-right: 20px;
+}
+.card-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.card__title {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  color: var(--Marine-blue);
+}
+
+.card__price {
+  margin: 0;
+  color: hsl(231, 11%, 63%);
+}
+
+.year {
+  display: none;
+}
+
+.discount-price {
+  display: none;
+  margin-top: 8px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--Marine-blue);
+}
+
+.content__toggle--wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  background-color: hsl(229, 24%, 87%);
+  border-radius: 8px;
+}
+
+.monthly {
+  margin-right: 20px;
+  font-weight: 700;
+  color: var(--Marine-blue);
+}
+.toggle {
+}
+
+.yearly {
+  margin-left: 20px;
+  font-weight: 700;
+  color: hsl(231, 11%, 63%);
 }
