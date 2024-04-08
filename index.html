@@ -11,6 +11,87 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <div class="main">
+      <div class="sidebar">
+        <ul class="sidebar-steps">
+          <li class="sidebar-step">
+            <div class="sidebar-step__number">1</div>
+            <div class="sidebar-step__content">
+              <p class="sidebar-step__content--number">Step 1</p>
+              <p class="sidebar-step__title">Your info</p>
+            </div>
+          </li>
+          <li class="sidebar-step">
+            <div class="sidebar-step__number">2</div>
+            <div class="sidebar-step__content">
+              <p class="sidebar-step__content--number">Step 2</p>
+              <p class="sidebar-step__title">Select plan</p>
+            </div>
+          </li>
+          <li class="sidebar-step">
+            <div class="sidebar-step__number">3</div>
+            <div class="sidebar-step__content">
+              <p class="sidebar-step__content--number">Step 3</p>
+              <p class="sidebar-step__title">Add-ons</p>
+            </div>
+          </li>
+          <li class="sidebar-step">
+            <div class="sidebar-step__number">4</div>
+            <div class="sidebar-step__content">
+              <p class="sidebar-step__content--number">Step 4</p>
+              <p class="sidebar-step__title">Summary</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="main personal">
+        <div class="personal__top">
+          <h1 class="personal__title">Personal info</h1>
+          <p class="personal__description">
+            Please provide your name, email address, and phone number.
+          </p>
+        </div>
+
+        <div class="personal__form--wrapper">
+          <form class="personal__form" action="get">
+            <div class="personal__label--wrapper">
+              <label class="personal__label" for="name">Name</label>
+            </div>
+            <div class="personal__input--wrapper">
+              <input
+                class="personal__input"
+                type="text"
+                id="name"
+                placeholder="e.g. Stephen King"
+              />
+            </div>
+            <div class="personal__label--wrapper">
+              <label class="personal__label" for="email">Email Address</label>
+            </div>
+            <div class="personal__input--wrapper">
+              <input
+                class="personal__input"
+                type="email"
+                id="email"
+                placeholder="e.g. stephenking@lorem.com"
+              />
+            </div>
+            <div class="personal__label--wrapper">
+              <label class="personal__label" for="pNumber">Phone Number</label>
+            </div>
+            <div class="personal__input--wrapper">
+              <input
+                class="personal__input"
+                type="tel"
+                id="pNumber"
+                placeholder="e.g. +1 234 567 890"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
     <script src="js/main.js"></script>
   </body>
 </html>
